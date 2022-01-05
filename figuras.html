@@ -16,19 +16,73 @@
     </head>
 
     <section>
-        <h2>Calcula el área y perimetro de un cuadrado</h2>
-        <form>
-            <label for="inputCuadrado">
-                escribe cúanto mide cada lado de tu cuadrado
-            </label>
-            <input type="number" name="inputCuadrado" id="inputCuadrado">
-            <button type="button" onclick="calcularPerimetroCuadrado()">
-                Calcular perímetro
-            </button>
-            <button type="button" onclick="calcularAreaCuadrado()">
-                Calcular área
-            </button>
-        </form>
+        <!-- Cuadrado -->
+        <article>
+            <h2>Calcula el área y perimetro de un cuadrado</h2>
+            <form>
+                <label for="inputCuadrado">
+                    Escribe cúanto mide cada lado de tu cuadrado
+                </label>
+                <input type="number" name="inputCuadrado" id="inputCuadrado">
+                <button type="button" onclick="calcularPerimetroCuadrado()">
+                    Calcular perímetro
+                </button>
+                <button type="button" onclick="calcularAreaCuadrado()">
+                    Calcular área
+                </button>
+            </form>
+        </article>
+        <!-- Triángulo -->
+        <article>
+            <h2>Calcula el área y perimetro de un triángulo</h2>
+            <form>
+                <label for="inputTriangulo1">
+                    Escribe cúanto mide el lado 1 de tu triángulo
+                </label>
+                <input type="number" name="inputTriangulo1" id="inputTriangulo1">
+                
+                <label for="inputTriangulo2">
+                    Escribe cúanto mide el lado 2 de tu triángulo
+                </label>
+                <input type="number" name="inputTriangulo2" id="inputTriangulo2">
+                
+                <label for="inputTriangulo3">
+                    Escribe cúanto mide la base de tu triángulo
+                </label>
+                <input type="number" name="inputTriangulo3" id="inputTriangulo3">
+                
+                <label for="inputTrianguloAltura">
+                    Escribe cúanto mide ls altura de tu triángulo
+                </label>
+                <input type="number" name="inputTrianguloAltura" id="inputTrianguloAltura">
+
+                <button type="button" onclick="calcularPerimetroTriangulo()">
+                    Calcular perímetro
+                </button>
+                <button type="button" onclick="calcularAreaTriangulo()">
+                    Calcular área
+                </button>
+            </form>
+        </article>
+        <!-- Circulo -->
+        <article>
+            <h2>Calcula el área y perimetro de un círculo</h2>
+            <form>
+                <label for="inputCirculo">
+                    Escribe cúanto mide el radio de tu círculo
+                </label>
+                <input type="number" name="inputCirculo" id="inputCirculo">
+                <button type="button" onclick="calcularDiametroCirculo()">
+                    Calcular diametro
+                </button>
+                <button type="button" onclick="calcularPerimetroCirculo()">
+                    Calcular perímetro
+                </button>
+                <button type="button" onclick="calcularAreaCirculo()">
+                    Calcular área
+                </button>
+            </form>
+        </article>
     </section>
     
     <!-- Scripts -->
