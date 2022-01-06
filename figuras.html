@@ -35,6 +35,7 @@
                     </button>
                 </div>
             </form>
+            <div id="cuadradoResultado"></div>
         </article>
         <!-- Triángulo -->
         <article class="card">
@@ -61,14 +62,42 @@
                 <input type="number" name="inputTrianguloAltura" id="inputTrianguloAltura">
 
                 <div class="button-wrapper">
-                    <button type="button" onclick="calcularPerimetroCuadrado()">
+                    <button type="button" onclick="calcularPerimetroTriangulo()">
                         Calcular perímetro
                     </button>
-                    <button type="button" onclick="calcularAreaCuadrado()">
+                    <button type="button" onclick="calcularAreaTriangulo()">
                         Calcular área
                     </button>
                 </div>
             </form>
+            <div id="trianguloResultado"></div>
+        </article>
+        <!-- Triángulo isósceles -->
+        <article class="card">
+            <h2>Calcula la altura de un triángulo isósceles</h2>
+            <form>
+                <label for="inputTriangulo1isosceles">
+                    Escribe cúanto mide el lado 1 de tu triángulo
+                </label>
+                <input type="number" name="inputTriangulo1isosceles" id="inputTriangulo1isosceles">
+                
+                <label for="inputTriangulo2isosceles">
+                    Escribe cúanto mide el lado 2 de tu triángulo
+                </label>
+                <input type="number" name="inputTriangulo2isosceles" id="inputTriangulo2isosceles">
+                
+                <label for="inputTriangulo3isosceles">
+                    Escribe cúanto mide la base de tu triángulo
+                </label>
+                <input type="number" name="inputTriangulo3isosceles" id="inputTriangulo3isosceles">
+
+                <div class="button-wrapper">
+                    <button type="button" onclick="calcularAlturaTrianguloIsosceles()">
+                        Calcular altura
+                    </button>
+                </div>
+            </form>
+            <div id="trianguloIsoscelesResultado"></div>
         </article>
         <!-- Circulo -->
         <article class="card">
@@ -90,6 +119,7 @@
                     </button>
                 </div>
             </form>
+            <div id="circuloResultado"></div>
         </article>
     </section>
     
