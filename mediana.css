@@ -10,6 +10,22 @@ h1.title,
     text-align: center;
     margin: 1rem;
 }
+.button-wrapper {
+    width: 5rem;
+    height: 3rem;
+    display: grid;
+    place-items: center;
+    background-color: #D5DBDB;
+    color: #6f7070;
+    text-decoration: none;
+}
+.button-wrapper:hover {
+    background-color: #b3b8b8;
+}
+.back-button {
+    text-align: center;
+    font-size: 1.5rem;
+}
 .grid {
     display: grid;
     /* grid-template-columns: repeat(3, 1fr); */

@@ -18,7 +18,7 @@ ol {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     place-items: center;
-    gap: 16px;
+    gap: 36px;
 }
 li {
     width: 40%;
@@ -27,6 +27,7 @@ li {
     cursor: pointer;
     border-radius: 8px;
     list-style: none;
+    border: 1px solid #D5DBDB;
     background-color: #D5DBDB;
 }
 li a {
@@ -39,5 +40,6 @@ li a {
 }
 li:hover {
     border: 1px solid black;
+    background-color: #b3b8b8;
     transform: scale(1.1);
 }
