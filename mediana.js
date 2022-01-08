@@ -26,7 +26,6 @@ function esPar(numerito) {
     }
 }
 
-
 function addItemList() {
     const newItem = document.getElementById("newItem");
     const listView = document.getElementById("lista")
