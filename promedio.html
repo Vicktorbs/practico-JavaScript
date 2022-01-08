@@ -10,7 +10,29 @@
     <link rel="stylesheet" href="promedio.css">
 </head>
 <body>
-    
+    <header>
+        <h1 class="title">Promedio</h1>
+        <p class="sub-title">Tercer taller del curso practico</p>
+    </header>
+
+    <section class="grid">
+        <article>
+            <h2>Calcula el promedio: </h2>
+
+            <form>
+                <label for="newItem">Escribe el precio de tu producto</label>
+                <p id="lista"></p>
+                <input type="number" name="newItem" id="newItem">
+                <button type="button" class="add" onclick="addItemList()">+</button>
+
+                <button type="button" onclick="onClickButtonPromedio()">
+                    Calcular el pprecio con descuento
+                </button>
+
+                <p id="resultPromedio"></p>
+            </form>
+        </article>
+    </section>
 
     <script src="./promedio.js"></script>
 </body>
