@@ -7,9 +7,33 @@
     <title>Salarios</title>
 
     <!-- CSS -->
-    <!-- <link rel="stylesheet" href="promedio.css"> -->
+    <link rel="stylesheet" href="salarios.css">
 </head>
 <body>
+    <header>
+        <h1 class="title">Salarios</h1>
+        <p class="sub-title">Cuarto taller del curso practico</p>
+    </header>
+
+    <section class="grid">
+        <article>
+            <h2>Calcula salario general: </h2>
+
+            <form>
+                <label for="newItem">Escribe los valores</label>
+                <p id="lista"></p>
+                <input type="number" name="newItem" id="newItem">
+                <button type="button" class="add" onclick="addItemList()">+</button>
+
+                <button type="button" onclick="onClickButtonModa()">
+                    Calcular la moda
+                </button>
+
+                <p id="resultSalario"></p>
+            </form>
+        </article>
+    </section>
+
 
     <script src="salarios.js"></script>
     <script src="analisis.js"></script>

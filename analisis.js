@@ -1,3 +1,4 @@
+let list = []
 // Helpers
 function esPar(numerito) {
     return numerito % 2 === 0;
@@ -30,26 +31,36 @@ function medianaSalarios(lista) {
     }
 }
 
-// Mediana general
-const salariosCol = colombia.map(
-    function (personita) {
-        return personita.salary;
-    }    
-)    
+function addItemList() {
+    const newItem = document.getElementById("newItem");
+    const listView = document.getElementById("lista")
+    const newValue = parseInt(newItem.value);
+    list.push(newValue)
 
-const salariosColSorted = salariosCol.sort(
-    function (salaryA, salaryB) {
-        return salaryA - salaryB;
-    }    
-)
+    console.log(list);
+    listView.innerText = "[" + list + "]"
+    newItem.value = ""
+}
 
-const medianaGeneralCol = medianaSalarios(salariosColSorted);
+function onClickButtonModa() {
+    const salariosColSorted = list.sort(
+        function (salaryA, salaryB) {
+            return salaryA - salaryB;
+        }    
+    )
 
-// Mediana del top 10% 
-const spliceStart = (salariosColSorted.length * 90) / 100;
-const spliceCount = salariosColSorted.length - spliceStart;
-const salariosColTop10 = salariosColSorted.splice(spliceStart, spliceCount);
+    const medianaGeneralCol = medianaSalarios(salariosColSorted);
 
-const medianaTop10Col = medianaSalarios(salariosColTop10);
+    // Mediana del top 10% 
+    const spliceStart = (salariosColSorted.length * 90) / 100;
+    const spliceCount = salariosColSorted.length - spliceStart;
+    const salariosColTop10 = salariosColSorted.splice(spliceStart, (spliceCount >= 1 ?  spliceCount: 1));
 
-console.log({medianaGeneralCol, medianaTop10Col});
+    const medianaTop10Col = medianaSalarios(salariosColTop10);
+
+    const resultView = document.getElementById("resultSalario");
+    
+    resultView.innerText = `El salario medio general es: ${ medianaGeneralCol }
+    Salario general del top 10%: ${ medianaTop10Col}`;
+    list = []
+}
